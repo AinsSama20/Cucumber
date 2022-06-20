@@ -1,14 +1,8 @@
 package runner;
 
-import io.cucumber.java.After;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import org.junit.AfterClass;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.WebDriver;
-import runner.browser_manager.DriverManager;
-import runner.browser_manager.DriverManagerFactory;
-import runner.browser_manager.DriverType;
 
 @RunWith(Cucumber.class)
 

@@ -10,7 +10,6 @@ import runner.browser_manager.DriverManager;
 import runner.browser_manager.DriverManagerFactory;
 import runner.browser_manager.DriverType;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;

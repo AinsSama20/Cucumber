@@ -10,6 +10,9 @@ import org.openqa.selenium.WebElement;
 
 public class Test extends TestBase{
 
+    private int start;
+    private int left;
+
     @Given("El usuario se encuentra en la pagina de inicio")
     public void el_usuario_se_encuentra_en_la_pagina_de_inicio() throws Exception{
         // Write code here that turns the phrase above into concrete actions
@@ -25,4 +28,21 @@ public class Test extends TestBase{
         // Write code here that turns the phrase above into concrete actions
         Assert.assertTrue(comicPage.isTitleComicsDisplayed());
     }
+
+    @Given("Hay {int} cervezas")
+    public void hayCervezas(int int1) throws Exception{
+        // Write code here that turns the phrase above into concrete actions
+        this.start=int1;
+    }
+    @When("Tomo {int} cervezas")
+    public void tomoCervezas(int int1) throws Exception{
+        // Write code here that turns the phrase above into concrete actions
+        this.left=this.start-int1;
+    }
+    @Then("Deberian quedar {int} cervezas")
+    public void deberianQuedarCervezas(int int1) throws Exception{
+        // Write code here that turns the phrase above into concrete actions
+        Assert.assertEquals(int1,this.left);
+    }
+
     }

@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         publish = true,
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@browser and not @outline"
+        tags = "not @Google and not @AsesoriaLegal and not @ComprarInmueble and not @ConstruirInmueble"
 )
 
 

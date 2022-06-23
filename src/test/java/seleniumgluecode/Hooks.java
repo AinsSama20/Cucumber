@@ -55,7 +55,7 @@ public class Hooks {
     }
 
     public static WebDriver getDriver(){
-        System.out.println("El escenario numero: "+numeroCaso+" se ejecuto");
+        System.out.println("El escenario número: "+numeroCaso+" se ejecutó");
         return driver;
     }
 
